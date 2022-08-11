@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>food delivery website</title>
+
+</head>
+<style>
+    .logo img {
+        width: 60px;
+        height: 50px;
+        border-radius: 80px;
+        margin: 10px;
+        padding: 5px 0px;
+    }
+
+    nav {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        height: 70px;
+
+        align-items: flex-start;
+
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.19rem;
+
+
+
+
+    }
+
+    ul {
+        display: flex;
+
+    }
+
+    ul li {
+
+        list-style: none;
+        padding: 8px 44px;
+        margin: -1px;
+        justify-content: space-between;
+
+
+
+    }
+
+    ul li a {
+        text-decoration: none;
+        cursor: pointer;
+        color: whitesmoke;
+
+    }
+
+    ul li a:hover {
+        color: bisque;
+    }
+
+    .section1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        height: 80vh;
+        top: 0%;
+        right: 0%;
+        left: 0%;
+        background: url('https://images.unsplash.com/photo-1523905330026-b8bd1f5f320e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aG90JTIwZm9vZHxlbnwwfHwwfHw%3D&w=1000&q=80') no-repeat center center/cover;
+
+
+
+
+
+
+    }
+
+    .h1-heading {
+        display: flex;
+        font-size: 2.89rem;
+        align-items: center;
+        justify-content: center;
+        color: white;
+
+
+    }
+
+    .section1 div p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 0.99rem;
+        margin: 12px;
+        padding: 4px 4px;
+        color: black;
+    }
+
+    .box {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        width: 378px;
+        height: 358px;
+        box-sizing: border-box;
+        border: 2px solid black;
+        margin: 28px;
+        float: left;
+        justify-content: space-evenly;
+        box-shadow: 10px 10px rgb(136, 102, 102);
+
+    }
+
+
+
+    .h2-heading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 44px;
+        font-size: 1.59rem;
+    }
+
+    .p-section2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 34px;
+        font-size: 1.19rem;
+    }
+
+    .btn {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        position: relative;
+        box-sizing: border-box;
+        border: 2px solid black;
+        margin: 20px;
+        background-color: bisque;
+        color: black;
+        border: 2px solid black;
+        cursor: pointer;
+        border-radius: 4px;
+        box-shadow: -4px -4px rgb(154, 148, 77);
+
+    }
+
+    .btn:hover {
+        color: black;
+        background-color: rgb(132, 130, 92);
+    }
+
+    #img1 img {
+        width: 202px;
+        height: 194px;
+        display: block;
+        margin: 4px -62px 109px 55px;
+        padding: -6px 4px;
+    }
+
+    #h1 {
+        display: flex;
+        justify-content: center;
+        padding: 4px 4px;
+        margin: 210px 115px 29px -91px;
+    }
+
+    #b1 {
+        display: flex;
+        padding: 2px 3px;
+        margin: 257px 4px 57px -227px;
+
+    }
+
+    #img2 img {
+        width: 202px;
+        height: 194px;
+        display: block;
+        margin: 4px -62px 109px 55px;
+        padding: -6px 4px;
+
+
+    }
+
+    #h2 {
+        display: flex;
+        justify-content: center;
+        padding: 4px 4px;
+        margin: 210px 62px 29px -126px;
+    }
+
+    #b2 {
+        display: flex;
+        padding: 2px 3px;
+        margin: 257px 4px 57px -187px;
+
+
+    }
+
+
+    #img3 img {
+        width: 202px;
+        height: 194px;
+        display: block;
+        margin: 29px -43px 109px 97px;
+        padding: -6px 4px;
+    }
+
+    #h3 {
+        display: flex;
+        justify-content: center;
+        padding: 4px 4px;
+        margin: 222px -250px 27px 33px;
+    }
+
+    #b3 {
+        display: flex;
+        padding: 2px 3px;
+        margin: 257px 4px 59px -156px;
+    }
+
+    #img4 img {
+        width: 202px;
+        height: 194px;
+        display: block;
+        margin: 4px -62px 109px 55px;
+        padding: -6px 4px;
+    }
+
+    #h4 {
+        display: flex;
+        justify-content: center;
+        padding: 4px 4px;
+        margin: 210px 102px 29px -91px;
+    }
+
+    #b4 {
+        display: flex;
+        padding: 2px 3px;
+        margin: 257px 4px 57px -187px;
+
+    }
+
+
+    .btn {
+        box-sizing: border-box;
+        border: 2px solid black;
+
+        background-color: bisque;
+        color: black;
+        border: 2px solid black;
+        cursor: pointer;
+        border-radius: 4px;
+        box-shadow: -4px -4px rgb(154, 148, 77);
+
+    }
+
+
+
+
+    .section2 img {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 210px;
+        height: 194px;
+        margin-top: 48px;
+    }
+
+    .image {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        width: 378px;
+        height: 358px;
+        box-sizing: border-box;
+        border: 2px solid black;
+        margin: 28px;
+
+        float: left;
+        justify-content: space-evenly;
+        box-shadow: 10px 10px rgb(136, 102, 102);
+
+    }
+
+    .btn1 {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        position: relative;
+        box-sizing: border-box;
+        border: 2px solid black;
+        margin: 40px;
+        background-color: bisque;
+        color: black;
+        border: 2px solid black;
+        cursor: pointer;
+        border-radius: 4px;
+        box-shadow: -4px -4px rgb(154, 148, 77);
+        margin: 270px -21px 6px -210px;
+
+    }
+
+    .btn:hover {
+        color: black;
+        background-color: rgb(132, 130, 92);
+    }
+
+    .h4-heading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4px 4px;
+        margin: 292px -52px -27px -260px;
+    }
+
+    /* .poweredby img {
+        width: 400px;
+        height: 300px;
+        display: flex;
+        border: 2px solid black;
+        margin: 2px;
+
+    }
+
+
+
+    .poweredby {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } */
+    @media(max-width:767px)
+    {
+        .h1-heading{
+font-size: 1.29rem;
+
+        }
+        .section1{
+            width: 100%;
+        }
+        .para1{
+            font-size:1rem;
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="https://chinmaycreations.in/wp-content/uploads/2021/11/chinmay-logo.png" alt="">
+
+            </div>
+            <ul>
+                <li class="nav"><a href="">Home</a></li>
+                <li class="nav"><a href="">services</a></li>
+                <li class="nav"><a href="">Contact Us</a></li>
+                <li class="nav"><a href="">Help</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+
+    <section class="section1">
+        <div>
+
+            <h1 class="h1-heading">
+                Welcome to Free Delivery site
+            </h1>
+            <p class="para1">
+                Hello folks,we are offering you a best free delivery offer by ChinmayMeal company brand.This offer is
+                valid for today only.You can order your food now.so hurry up and order your food.
+
+            </p>
+
+            <p>
+                order your favorite food by clicking on below button
+            </p>
+        </div>
+
+
+    </section>
+
+
+
+    <section class="section2">
+        <div class="heading">
+            <h2 class="h2-heading">Order your favorite food </h2>
+            <p class="p-section2">By clicking the button below on the food item</p>
+        </div>
+
+        <div class="box" id="box1">
+            <div id="img1">
+                <img src="https://images.unsplash.com/photo-1618213837799-25d5552820d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cGl6emFzfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+                    alt="">
+            </div>
+            <h4 id="h1">Sweet Corn Pizza</h4>
+
+            <div><button class="btn" id="b1">
+                    Order Now
+                </button>
+            </div>
+        </div>
+        <div class="box" id="box2">
+            <div id="img2">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1huErcKfz3IxothbtIFVNeSAKErK_71wwSDfxHCawZsQehGj6iVXFe0UStDnMFNV5DC8&usqp=CAU"
+                    alt="">
+            </div>
+            <h4 id="h2">Veg Cheese Pizza</h4>
+            <div><button class="btn" id="b2">
+                    Order Now
+                </button>
+            </div>
+        </div>
+
+        <div class="box" id="box3">
+            <h4 id="h3">Veg pizza</h4>
+            <div id="img3">
+                <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTh8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80"
+                    alt="">
+            </div>
+            <div><button class="btn" id="b3">
+                    Order Now
+                </button>
+            </div>
+
+        </div>
+
+        <div class="box">
+            <div id="img4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-R_cQx3KTX3wqAWLc_sIkvxLEsiKZEWcfLw&usqp=CAU"
+                    alt="">
+            </div>
+            <h4 id="h4">Paneer Veg Pizza</h4>
+
+            <div><button class="btn" id="b4">
+                    Order Now
+                </button>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+    <section class="section2">
+        <h2 id="h3-heading">
+
+        </h2>
+        <div class="image">
+            <img src="https://images.unsplash.com/photo-1571091655789-405eb7a3a3a8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGJ1cmdlcnxlbnwwfHwwfHw%3D&w=1000&q=80"
+                alt="">
+            <button class="btn1">
+                order now
+            </button>
+            <div>
+                <h4 class="h4-heading">
+                    Shahi Veg Burger
+                </h4>
+            </div>
+        </div>
+
+        <div class="image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc6l8-3mBC3L2WzNfIFGq0F1GWVNffL5TFHw&usqp=CAU"
+                alt="">
+            <button class="btn1">
+                order now
+            </button>
+            <div>
+                <h4 class="h4-heading">
+                    Maharaja Burger
+                </h4>
+            </div>
+        </div>
+
+        <div class="image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj-KedNwXQIs_aYu42plovE_LsR_067SatNQ&usqp=CAU"
+                alt="">
+            <button class="btn1">
+                order now
+            </button>
+            <div>
+                <h4 class="h4-heading">
+                    Non Veg Burger
+                </h4>
+            </div>
+        </div>
+
+        <div class="image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_JvoUAzucxALPZ8KQRaxsBdZk3-Kh1Btb_g&usqp=CAU"
+                alt="">
+            <button class="btn1">
+                order now
+            </button>
+            <div>
+                <h4 class="h4-heading">
+                    Veg Cheese Burger</h4>
+            </div>
+        </div>
+
+        <div class="image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVO6gGiF_1KbkNJeiLjuYjjFfZ_7ttfhb2cQ&usqp=CAU"
+                alt="">
+            <button class="btn1">
+                order now
+            </button>
+            <div>
+                <h4 class="h4-heading">
+                    Chiken Burger</h4>
+            </div>
+        </div>
+
+    </section>
+    <!-- <section class="section3">
+        <div>
+            <h1 id="h5-heading">
+                Powered By
+            </h1>
+        </div>
+        <div class="poweredby">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjY3Ys0MKJ84j-6NL1ARaifitRzZIOUP1g9A&usqp=CAU"
+                alt="">
+        </div>
+
+    </section> -->
+
+
+</body>
+
+</html>
